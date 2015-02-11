@@ -5,7 +5,8 @@ Retrieve data from the OBIS Web Services
 ## Install
 
 ```R
-library("robis")
+library("devtools")
+install_github("pieterprovoost/robis")
 ```
 
 ## Usage
