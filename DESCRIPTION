@@ -1,0 +1,10 @@
+Package: robis
+Type: Package
+Title: Retrieve data from the OBIS Web Services
+Version: 1.0
+Date: 2015-02-11
+Author: Pieter Provoost
+Maintainer: Pieter Provoost <pieterprovoost@gmail.com>
+Description: Retrieve data from the OBIS Web Services
+License: MIT
+Depends: RCurl, ggplot2, maps
