@@ -1,6 +1,6 @@
 # robis
 
-Retrieve data from the OBIS Web Services
+Retrieve data from the OBIS Web Services (under development)
 
 ## Install
 
