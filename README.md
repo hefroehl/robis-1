@@ -17,3 +17,5 @@ species <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenody
 data <- get_occurrences(species, 500)
 map_occurrences(data)
 ```
+
+![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map.png)
