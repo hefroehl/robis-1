@@ -1,3 +1,7 @@
 buildignore
 .Rproj.user
 robis.Rproj
+**/.DS_Store
+.Rbuildignore
+.Rhistory
+
