@@ -1,4 +1,4 @@
-get_occurrences <- function(species, maxFeatures=NULL) {
+get_occurrences <- function(identifiers, maxFeatures=NULL, type="species") {
   result <- NULL
   url <- obis_url(service="WFS")
   parms <- c(
@@ -9,9 +9,17 @@ get_occurrences <- function(species, maxFeatures=NULL) {
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
+
+  if (type == "species") {
+    quote <- function(x) paste0("'", x, "'")
+    identifiers <- sapply(identifiers, quote)
+    cond <- "where:tname="
+  } else if (type == "aphiaid") {
+    cond <- "where:valid_aphia_id="
+  }
   
-  for (name in species) {
-    sparms <- c(parms, viewparams=paste0("where:tname='", name, "'"))
+  for (identifier in identifiers) {
+    sparms <- c(parms, viewparams=paste0(cond, identifier))
     response <- GET(url, query=compact(as.list(sparms)))
     csv <- content(response, as = "text")
     result <- rbind(result, read.csv(text=csv))
