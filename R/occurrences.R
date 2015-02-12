@@ -1,4 +1,4 @@
-get_occurrences <- function(identifiers, maxFeatures=NULL, type="species") {
+get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", bbox=c(-180, -90, 180, 90)) {
   result <- NULL
   url <- obis_url(service="WFS")
   parms <- c(
@@ -7,6 +7,7 @@ get_occurrences <- function(identifiers, maxFeatures=NULL, type="species") {
     request="GetFeature",
     typeName="OBIS:points_ex",
     outputFormat="csv",
+    bbox=paste(bbox, collapse=","),
     maxFeatures=maxFeatures
   )
 
