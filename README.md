@@ -41,7 +41,8 @@ data <- get_occurrences("Carcharodon carcharias", bbox=c(-180,-20,180,20))
 
 # filter
 
-data <- get_occurrences("Abra alba", filter=c(yearcollected=2010, monthcollected=7))
+data <- get_occurrences("Abra alba", 
+  filter=list(yearcollected=2010, institutioncode="Scottish Natural Heritage"))
 
 # create map
 
