@@ -41,7 +41,7 @@ data <- get_occurrences("Carcharodon carcharias", bbox=c(-180,-20,180,20))
 
 # filter
 
-data <- get_occurrences("Carcharodon carcharias", filter=c(yearcollected=2009, monthcollected=3))
+data <- get_occurrences("Abra alba", filter=c(yearcollected=2009, monthcollected=3))
 
 # create map
 
