@@ -39,6 +39,10 @@ data <- get_occurrences(names, 500)
 
 data <- get_occurrences("Carcharodon carcharias", bbox=c(-180,-20,180,20))
 
+# filter
+
+data <- get_occurrences("Carcharodon carcharias", filter=c(yearcollected=2000))
+
 # create map
 
 map_occurrences(data)
