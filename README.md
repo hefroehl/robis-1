@@ -13,8 +13,8 @@ install_github("pieterprovoost/robis")
 
 ```R
 library(robis)
-species <- c("Carcharodon carcharias", "Mola mola", 
-  "Ursus maritimus", "Aptenodytes forsteri")
+species <- 
+  c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
 data <- get_occurrences(species, 500)
 map_occurrences(data)
 ```
