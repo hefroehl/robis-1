@@ -15,7 +15,7 @@ map_occurrences <- function(data) {
       plot.background=element_blank())
   }
   
-  ggplot(world, aes(long, lat)) +
+  p <- ggplot(world, aes(long, lat)) +
     geom_polygon(aes(group=group), fill="gray90", color="gray90", size=0.2) +
     geom_point(data=data, aes(longitude, latitude, color=tname), alpha=0.4, size=3) +
     labs(x="", y="") +
@@ -28,5 +28,7 @@ map_occurrences <- function(data) {
     guides(col = guide_legend(nrow=2)) +
     coord_fixed(ratio=1) +
     blanktheme()
+  
+  print(p)
 
 }

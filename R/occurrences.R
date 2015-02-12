@@ -1,4 +1,4 @@
-get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", bbox=c(-180, -90, 180, 90)) {
+get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", filter=NULL, bbox=c(-180, -90, 180, 90)) {
   result <- NULL
   url <- obis_url(service="WFS")
   parms <- c(
@@ -14,13 +14,22 @@ get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", bbox=
   if (type == "species") {
     quote <- function(x) paste0("'", x, "'")
     identifiers <- sapply(identifiers, quote)
-    cond <- "where:tname="
+    elname <- "tname"
   } else if (type == "aphiaid") {
-    cond <- "where:valid_aphia_id="
+    elname <- "valid_aphia_id"
   }
   
   for (identifier in identifiers) {
-    sparms <- c(parms, viewparams=paste0(cond, identifier))
+    
+    sfilter <- sapply(filter, as.character)
+    sfilter[[elname]] <- identifier
+    
+    cond <- NULL
+    for (name in names(sfilter)) {
+      cond <- c(cond, paste0(name, "=", sfilter[[name]]))
+    }
+    
+    sparms <- c(parms, viewparams=paste0("where:", paste(cond, collapse=" and ")))
     response <- GET(url, query=compact(as.list(sparms)))
     csv <- content(response, as = "text")
     result <- rbind(result, read.csv(text=csv))
