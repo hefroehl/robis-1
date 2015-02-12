@@ -16,7 +16,7 @@ install_github("pieterprovoost/robis")
 ```R
 # get AphiaID from WoRMS
 
-id <- get_aphiaid("Abra alba")
+get_aphiaid("Abra alba")
 ```
 
 ```text
