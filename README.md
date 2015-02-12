@@ -17,7 +17,7 @@ library(robis)
 
 # get AphiaID from WoRMS
 
-get_aphiaid("Abra alba")
+id <- get_aphiaid("Abra alba")
 
 # find by AphiaId
 
