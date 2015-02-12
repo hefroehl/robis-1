@@ -16,12 +16,12 @@ library(robis)
 
 # find by AphiaId
 
-data <- get_occurrences(137094, 500)
+data <- get_occurrences(137094, 500, type="aphiaid")
 
 # find by species name
 
-species <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
-data <- get_occurrences(species, 500)
+names <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
+data <- get_occurrences(names, 500)
 
 # create map
 
