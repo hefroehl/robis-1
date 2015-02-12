@@ -3,5 +3,5 @@ buildignore
 robis.Rproj
 **/.DS_Store
 .Rbuildignore
-.Rhistory
+**/.Rhistory
 
