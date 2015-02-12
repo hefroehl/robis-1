@@ -14,16 +14,16 @@ install_github("pieterprovoost/robis")
 ```R
 library(robis)
 
-// find by AphiaId
+# find by AphiaId
 
 data <- get_occurrences(137094, 500)
 
-// find by species name
+# find by species name
 
 species <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
 data <- get_occurrences(species, 500)
 
-// create map
+# create map
 
 map_occurrences(data)
 ```
