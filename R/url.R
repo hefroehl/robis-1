@@ -5,3 +5,7 @@ obis_url <- function(service) {
     return("http://www.iobis.org/geoserver/wms")
   }
 }
+
+aphia_url <- function() {
+  return("http://www.marinespecies.org/aphia.php?p=soap")
+}
