@@ -10,6 +10,7 @@ install_github("pieterprovoost/robis")
 ```
 
 ## Usage
+### Occurrences
 
 ```R
 library(robis)
