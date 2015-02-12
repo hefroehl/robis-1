@@ -54,3 +54,11 @@ map_occurrences(data)
 ```
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map.png)
+
+```R
+data <- get_occurrences(get_aphiaid("Balaenoptera musculus"), type="aphiaid", 
+  where="resource_id = 22 or resource_id = 2553")
+map_occurrences(data, color="resname")
+```
+
+![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map2.png)
