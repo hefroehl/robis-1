@@ -16,11 +16,11 @@ install_github("pieterprovoost/robis")
 ```R
 # get AphiaID from WoRMS
 
-get_aphiaid("Abra alba")
+get_aphiaid(c("Abra alba", "Lanice"))
 ```
 
 ```text
-[1] "141433"
+[1] "141433" "129697"
 ```
 
 ### Occurrences
