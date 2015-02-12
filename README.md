@@ -17,13 +17,7 @@ library(robis)
 
 # get AphiaID from WoRMS
 
-```R
 get_aphiaid("Abra alba")
-```
-
-```text
-[1] "141433"
-```
 
 # find by AphiaId
 
