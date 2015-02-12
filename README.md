@@ -10,11 +10,22 @@ install_github("pieterprovoost/robis")
 ```
 
 ## Usage
+
+### AphiaID
+
+```R
+# get AphiaID from WoRMS
+
+get_aphiaid("Abra alba")
+```
+
+```text
+[1] "141433"
+```
+
 ### Occurrences
 
 ```R
-library(robis)
-
 # find by AphiaId
 
 data <- get_occurrences(137094, 500, type="aphiaid")
