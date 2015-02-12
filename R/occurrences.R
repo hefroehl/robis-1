@@ -21,7 +21,15 @@ get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", filte
   
   for (identifier in identifiers) {
     
-    sfilter <- sapply(filter, as.character)
+    quote <- function(x) {
+      if (is.character(x)) {
+        paste0("'", x, "'")  
+      } else {
+        as.character(x)
+      }
+    }
+    
+    sfilter <- sapply(filter, quote)
     sfilter[[elname]] <- identifier
     
     cond <- NULL
