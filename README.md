@@ -35,6 +35,10 @@ data <- get_occurrences(137094, 500, type="aphiaid")
 names <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
 data <- get_occurrences(names, 500)
 
+# bounding box
+
+data <- get_occurrences("Carcharodon carcharias", bbox=c(-180,-20,180,20))
+
 # create map
 
 map_occurrences(data)
