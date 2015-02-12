@@ -6,15 +6,13 @@ get_occurrences <- function(species, maxFeatures=NULL) {
     version="1.0.0",
     request="GetFeature",
     typeName="OBIS:points_ex",
-    outputFormat="csv"
+    outputFormat="csv",
+    maxFeatures=maxFeatures
   )
-  if (!is.null(maxFeatures)) {
-    parms <- c(parms, maxFeatures=as.character(maxFeatures))
-  }
   
   for (name in species) {
-    sparms <- c(parms, VIEWPARAMS=paste0("where:tname='", name, "'"))
-    response <- GET(url, query=as.list(sparms))
+    sparms <- c(parms, viewparams=paste0("where:tname='", name, "'"))
+    response <- GET(url, query=compact(as.list(sparms)))
     csv <- content(response, as = "text")
     result <- rbind(result, read.csv(text=csv))
   }
