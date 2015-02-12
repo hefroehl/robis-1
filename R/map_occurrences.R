@@ -1,4 +1,4 @@
-map_occurrences <- function(x) {
+map_occurrences <- function(data) {
   world <- map_data(map="world")
   
   blanktheme <- function() {

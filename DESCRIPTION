@@ -7,4 +7,4 @@ Author: Pieter Provoost
 Maintainer: Pieter Provoost <pieterprovoost@gmail.com>
 Description: Retrieve data from the OBIS Web Services
 License: MIT
-Depends: RCurl, ggplot2, maps
+Depends: httr, ggplot2, maps
