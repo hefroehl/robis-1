@@ -66,3 +66,10 @@ map_occurrences(data, color="resname")
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map2.png)
 
 ### Gridded species distribution
+
+```R
+data <- get_distribution("Mola mola")
+map_distribution(data)
+```
+
+![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map3.png)
