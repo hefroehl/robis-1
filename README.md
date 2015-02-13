@@ -15,7 +15,7 @@ install_github("pieterprovoost/robis")
 [Occurrences](#occurrences)  
 [Gridded distribution](#distribution)  
 
-<a name="aphiaid">
+<a name="aphiaid"></a>
 ### AphiaID
 
 ```R
@@ -28,7 +28,7 @@ get_aphiaid(c("Abra alba", "Lanice"))
 [1] "141433" "129697"
 ```
 
-<a name="occurrences">
+<a name="occurrences"></a>
 ### Occurrences
 
 ```R
@@ -71,7 +71,7 @@ map_occurrences(data, color="resname")
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map2.png)
 
-<a name="distribution">
+<a name="distribution"></a>
 ### Gridded species distribution
 
 ```R
