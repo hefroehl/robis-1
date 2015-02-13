@@ -64,3 +64,5 @@ map_occurrences(data, color="resname")
 ```
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map2.png)
+
+### Gridded species distribution
