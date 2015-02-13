@@ -13,7 +13,7 @@ install_github("pieterprovoost/robis")
 
 [AphiaID](#aphiaid)  
 [Occurrences](#occurrences)  
-[Gridded distribution](#distribution)  
+[Gridded species distribution](#distribution)  
 
 <a name="aphiaid"></a>
 ### AphiaID
