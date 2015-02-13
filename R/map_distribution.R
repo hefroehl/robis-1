@@ -17,7 +17,7 @@ map_distribution <- function(data) {
     labs(x="", y="") +
     geom_polygon(data=polyg, aes(x=long, y=lat, group=group, fill=as.factor(bin)), alpha=0.9) +
     scale_fill_manual(
-      labels=c("1-6", "6-10", "11-50", "51-100", ">101"), 
+      labels=c("1-5", "6-10", "11-50", "51-100", ">101"), 
       values=c("#56B4E9", "green", "yellow", "orange", "red")) +
     theme_bw(base_size=14) +
     theme(
