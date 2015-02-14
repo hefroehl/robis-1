@@ -14,6 +14,7 @@ install_github("pieterprovoost/robis")
 [AphiaID](#aphiaid)  
 [Occurrences](#occurrences)  
 [Gridded species distribution](#distribution)  
+[Bodiversity indices](#biodiversity)  
 
 <a name="aphiaid"></a>
 ### AphiaID
