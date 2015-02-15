@@ -92,3 +92,12 @@ map_summaries(data, "shannon")
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map4.png)
 
+```R
+# hexgrid
+
+data <- get_hexsummaries()
+map_summaries(data, "shannon")
+```
+
+![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map5.png)
+
