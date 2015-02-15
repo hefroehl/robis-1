@@ -14,6 +14,7 @@ install_github("pieterprovoost/robis")
 [AphiaID](#aphiaid)  
 [Occurrences](#occurrences)  
 [Gridded species distribution](#distribution)  
+[Bodiversity indices](#biodiversity)  
 
 <a name="aphiaid"></a>
 ### AphiaID
@@ -80,3 +81,14 @@ map_distribution(data)
 ```
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map3.png)
+
+<a name="biodiversity"></a>
+### Bodiversity indices
+
+```R
+data <- get_summaries()
+map_summaries(data, "shannon")
+```
+
+![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map4.png)
+
