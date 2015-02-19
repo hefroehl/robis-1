@@ -8,13 +8,10 @@ get_summaries <- function(maxFeatures=NULL, table="map5deg_with_geom") {
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
-  
-  vp <- paste0("table:", table, ";")
-  sparms <- c(parms, viewparams=vp)
-  response <- GET(url, query=compact(as.list(sparms)))
-  csv <- content(response, as = "text")
-  
-  return(read.csv(text=csv))
+  vp <- c(
+    table=table
+  )
+  return(obis_request(url, parms, vp))
 }
 
 get_hexsummaries <- function(typeName="hexgrid4", maxFeatures=NULL) {
@@ -27,9 +24,5 @@ get_hexsummaries <- function(typeName="hexgrid4", maxFeatures=NULL) {
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
-  
-  response <- GET(url, query=compact(as.list(parms)))
-  csv <- content(response, as = "text")
-  
-  return(read.csv(text=csv))
+  return(obis_request(url, parms))
 }

@@ -8,11 +8,9 @@ get_distribution <- function(identifier, maxFeatures=NULL, table="dist_sp_5deg")
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
-  
-  vp <- paste0("where:scientific='", identifier, "';table:", table, ";")
-  sparms <- c(parms, viewparams=vp)
-  response <- GET(url, query=compact(as.list(sparms)))
-  csv <- content(response, as = "text")
-  
-  return(read.csv(text=csv))
+  vp <- c(
+    where=paste0("scientific='", identifier, "'"),
+    table=table
+  )
+  return(obis_request(url, parms, vp))
 }

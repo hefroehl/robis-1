@@ -1,4 +1,4 @@
-get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", filter=NULL, where=NULL, bbox=c(-180, -90, 180, 90)) {
+get_occurrences <- function(identifiers, maxFeatures=100, type="species", filter=NULL, where=NULL, bbox=c(-180, -90, 180, 90)) {
   result <- NULL
   url <- obis_url(service="WFS")
   parms <- c(
@@ -29,7 +29,8 @@ get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", filte
       }
     }
     
-    sfilter <- sapply(filter, quote)
+    sfilter <- filter
+    sfilter <- sapply(sfilter, quote)
     sfilter[[elname]] <- identifier
     
     cond <- NULL
@@ -38,15 +39,17 @@ get_occurrences <- function(identifiers, maxFeatures=NULL, type="species", filte
     }
 
     if (is.null(where)) {
-      vp <- paste0("where:", paste(cond, collapse=" and "))
+      vp <- c(
+        where=paste(cond, collapse=" and ")
+      )
     } else {
-      vp <- paste0("where:", paste(cond, collapse=" and "), " and (", where, ")")
+      vp <- c(
+        where=paste0(paste(cond, collapse=" and "), " and (", where, ")")
+      )
     }
-    
-    sparms <- c(parms, viewparams=vp)
-    response <- GET(url, query=compact(as.list(sparms)))
-    csv <- content(response, as = "text")
-    result <- rbind(result, read.csv(text=csv))
+
+    sresult <- obis_request(url, parms, vp)
+    result <- rbind(result, sresult)
   }
   return(result)
 }
