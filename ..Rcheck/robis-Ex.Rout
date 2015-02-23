@@ -1,0 +1,56 @@
+
+R version 3.1.1 (2014-07-10) -- "Sock it to Me"
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "robis"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> options(pager = "console")
+> library('robis')
+Loading required package: httr
+Loading required package: ggplot2
+Warning: package 'ggplot2' was built under R version 3.1.2
+Loading required package: maps
+Warning: package 'maps' was built under R version 3.1.2
+Loading required package: plyr
+Loading required package: XML
+Warning: package 'XML' was built under R version 3.1.2
+Loading required package: rgeos
+Warning: package 'rgeos' was built under R version 3.1.2
+rgeos version: 0.3-8, (SVN revision 460)
+ GEOS runtime version: 3.4.2-CAPI-1.8.2 r3921 
+ Polygon checking: TRUE 
+
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("robis-package")
+> ### * robis-package
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: robis-package
+> ### Title: What the package does (short line) ~~ package title ~~
+> ### Aliases: robis-package robis
+> ### Keywords: package
+> 
+> ### ** Examples
+> 
+> ~~ simple examples of the most important functions ~~
+Error: unexpected symbol in "~~ simple examples"
+Execution halted

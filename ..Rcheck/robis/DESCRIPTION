@@ -8,4 +8,4 @@ Maintainer: Pieter Provoost <pieterprovoost@gmail.com>
 Description: Retrieve data from the OBIS Web Services
 License: MIT
 Depends: httr, ggplot2, maps, plyr, XML, rgeos
-Suggests: testthat
+Built: R 3.1.1; ; 2015-02-23 15:03:21 UTC; windows
