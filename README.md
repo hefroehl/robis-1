@@ -86,6 +86,8 @@ map_distribution(data)
 ### Bodiversity indices
 
 ```R
+# c-squares
+
 data <- get_summaries()
 map_summaries(data, "shannon")
 ```
