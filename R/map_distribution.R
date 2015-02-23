@@ -13,13 +13,13 @@ map_distribution <- function(data) {
   
   polyg$bin <- .bincode(polyg$num_records, breaks=c(0, 5, 10, 50, 100, 1e12))
   
-  p <- ggplot(world, aes(long, lat)) +
-    geom_polygon(aes(group=group), fill="gray90", color="gray90", size=0.2) +
-    labs(x="", y="") +
+  p <- ggplot() +
     geom_polygon(data=polyg, aes(x=long, y=lat, group=group, fill=as.factor(bin)), alpha=0.9) +
     scale_fill_manual(
       labels=c("1-5", "6-10", "11-50", "51-100", ">100"), 
       values=c("#56B4E9", "green", "yellow", "orange", "red")) +
+    geom_polygon(data = world, aes(long, lat, group=group), fill="gray90", color="gray90", size=0.2) +
+    labs(x="", y="") +
     theme_bw(base_size=14) +
     theme(
       legend.position="bottom", 
