@@ -1,28 +1,25 @@
-get_occurrences <- function(identifiers, type="species", filter=NULL, where=NULL, ...) {
+get_occurrences <- function(identifiers, filter=NULL, where=NULL, ...) {
   
   result <- NULL
 
-  if (type == "species") {
-    quote <- function(x) paste0("'", x, "'")
-    identifiers <- sapply(identifiers, quote)
-    elname <- "tname"
-  } else if (type == "aphiaid") {
-    elname <- "valid_aphia_id"
+  quote <- function(x) {
+    if (is.character(x)) {
+      paste0("'", x, "'")  
+    } else {
+      as.character(x)
+    }
   }
   
   for (identifier in identifiers) {
     
-    quote <- function(x) {
-      if (is.character(x)) {
-        paste0("'", x, "'")  
-      } else {
-        as.character(x)
-      }
-    }
-    
     sfilter <- filter
     sfilter <- sapply(sfilter, quote)
-    sfilter[[elname]] <- identifier
+    
+    if(!is.na(as.numeric(identifier))) {
+      sfilter[["valid_aphia_id"]] <- identifier  
+    } else {
+      sfilter[["tname"]] <- quote(identifier)
+    }
     
     cond <- NULL
     for (name in names(sfilter)) {
