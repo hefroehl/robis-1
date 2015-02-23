@@ -1,4 +1,5 @@
 map_distribution <- function(data) {
+
   world <- map_data(map="world")
   
   polyg <- NULL

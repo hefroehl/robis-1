@@ -1,4 +1,5 @@
 map_occurrences <- function(data, color="tname") {
+  
   world <- map_data(map="world")
   
   p <- ggplot(world, aes(long, lat)) +
