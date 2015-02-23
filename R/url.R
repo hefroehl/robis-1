@@ -1,9 +1,9 @@
-obis_url <- function(service) {
-  if (service =="WFS") {
-    return("http://www.iobis.org/geoserver/OBIS/ows")
-  } else if (service == "WMS") {
-    return("http://www.iobis.org/geoserver/wms")
-  }
+wms_url <- function(service) {
+  return("http://www.iobis.org/geoserver/wms")
+}
+
+wfs_url <- function(service) {
+  return("http://www.iobis.org/geoserver/OBIS/ows")
 }
 
 aphia_url <- function() {

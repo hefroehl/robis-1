@@ -1,5 +1,5 @@
-get_summaries <- function(maxFeatures=NULL, table="map5deg_with_geom") {
-  url <- obis_url(service="WFS")
+get_summaries <- function(maxFeatures=NULL, table="map5deg_with_geom", propertyName=NULL) {
+  url <- wfs_url()
   parms <- c(
     service="WFS",
     version="1.0.0",
@@ -8,14 +8,14 @@ get_summaries <- function(maxFeatures=NULL, table="map5deg_with_geom") {
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
-  vp <- c(
+  viewparams <- c(
     table=table
   )
-  return(obis_request(url, parms, vp))
+  return(obis_request(url, parms, viewparams, propertyName))
 }
 
-get_hexsummaries <- function(typeName="hexgrid4", maxFeatures=NULL) {
-  url <- obis_url(service="WFS")
+get_hexsummaries <- function(maxFeatures=NULL, typeName="hexgrid4", propertyName=NULL) {
+  url <- wfs_url()
   parms <- c(
     service="WFS",
     version="1.0.0",
@@ -24,5 +24,5 @@ get_hexsummaries <- function(typeName="hexgrid4", maxFeatures=NULL) {
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
-  return(obis_request(url, parms))
+  return(obis_request(url, parms, propertyName=propertyName))
 }

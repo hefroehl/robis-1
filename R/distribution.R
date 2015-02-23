@@ -1,5 +1,5 @@
 get_distribution <- function(identifier, maxFeatures=NULL, table="dist_sp_5deg") {
-  url <- obis_url(service="WFS")
+  url <- wfs_url()
   parms <- c(
     service="WFS",
     version="1.0.0",
@@ -8,9 +8,9 @@ get_distribution <- function(identifier, maxFeatures=NULL, table="dist_sp_5deg")
     outputFormat="csv",
     maxFeatures=maxFeatures
   )
-  vp <- c(
+  viewparams <- c(
     where=paste0("scientific='", identifier, "'"),
     table=table
   )
-  return(obis_request(url, parms, vp))
+  return(obis_request(url, parms, viewparams))
 }

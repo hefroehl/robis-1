@@ -1,6 +1,6 @@
-get_occurrences <- function(identifiers, maxFeatures=100, type="species", filter=NULL, where=NULL, bbox=c(-180, -90, 180, 90)) {
+get_occurrences <- function(identifiers, maxFeatures=100, type="species", filter=NULL, where=NULL, propertyName=NULL, bbox=c(-180, -90, 180, 90)) {
   result <- NULL
-  url <- obis_url(service="WFS")
+  url <- wfs_url()
   parms <- c(
     service="WFS",
     version="1.0.0",
@@ -39,16 +39,16 @@ get_occurrences <- function(identifiers, maxFeatures=100, type="species", filter
     }
 
     if (is.null(where)) {
-      vp <- c(
+      viewparams <- c(
         where=paste(cond, collapse=" and ")
       )
     } else {
-      vp <- c(
+      viewparams <- c(
         where=paste0(paste(cond, collapse=" and "), " and (", where, ")")
       )
     }
 
-    sresult <- obis_request(url, parms, vp)
+    sresult <- obis_request(url, parms, viewparams, propertyName)
     result <- rbind(result, sresult)
   }
   return(result)
