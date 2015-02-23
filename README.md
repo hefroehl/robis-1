@@ -35,7 +35,7 @@ get_aphiaid(c("Abra alba", "Lanice"))
 ```R
 # find by AphiaId
 
-data <- get_occurrences(137094, type="aphiaid")
+data <- get_occurrences(137094)
 
 # find by species name
 
@@ -65,7 +65,7 @@ map_occurrences(data)
 ```R
 # change color criterium
 
-data <- get_occurrences(get_aphiaid("Balaenoptera musculus"), type="aphiaid", 
+data <- get_occurrences(get_aphiaid("Balaenoptera musculus"),
   where="resource_id = 22 or resource_id = 2553")
 map_occurrences(data, color="resname")
 ```
