@@ -1,4 +1,4 @@
-get_distribution <- function(identifier, maxFeatures=NULL, table="dist_sp_5deg") {
+get_distribution <- function(identifier, maxFeatures=NULL, table="dist_sp_5deg", propertyName=NULL) {
   url <- wfs_url()
   parms <- c(
     service="WFS",
@@ -12,5 +12,5 @@ get_distribution <- function(identifier, maxFeatures=NULL, table="dist_sp_5deg")
     where=paste0("scientific='", identifier, "'"),
     table=table
   )
-  return(obis_request(url, parms, viewparams))
+  return(obis_request(url, parms, viewparams, propertyName))
 }
