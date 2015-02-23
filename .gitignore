@@ -5,3 +5,4 @@ robis.Rproj
 .Rbuildignore
 **/.Rhistory
 info
+..Rcheck
