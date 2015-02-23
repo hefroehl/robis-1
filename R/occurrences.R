@@ -1,15 +1,6 @@
-get_occurrences <- function(identifiers, maxFeatures=100, type="species", filter=NULL, where=NULL, propertyName=NULL, bbox=c(-180, -90, 180, 90)) {
+get_occurrences <- function(identifiers, type="species", filter=NULL, where=NULL, ...) {
+  
   result <- NULL
-  url <- wfs_url()
-  parms <- c(
-    service="WFS",
-    version="1.0.0",
-    request="GetFeature",
-    typeName="OBIS:points_ex",
-    outputFormat="csv",
-    bbox=paste(bbox, collapse=","),
-    maxFeatures=maxFeatures
-  )
 
   if (type == "species") {
     quote <- function(x) paste0("'", x, "'")
@@ -38,18 +29,18 @@ get_occurrences <- function(identifiers, maxFeatures=100, type="species", filter
       cond <- c(cond, paste0(name, "=", sfilter[[name]]))
     }
 
+    viewparams <- NULL
     if (is.null(where)) {
-      viewparams <- c(
-        where=paste(cond, collapse=" and ")
-      )
+      viewparams[["where"]] <- paste(cond, collapse=" and ")
     } else {
-      viewparams <- c(
-        where=paste0(paste(cond, collapse=" and "), " and (", where, ")")
-      )
+      viewparams[["where"]] <- paste0(paste(cond, collapse=" and "), " and (", where, ")")
     }
 
-    sresult <- obis_request(url, parms, viewparams, propertyName)
+    sresult <- wfs_request("OBIS:points_ex", viewparams=viewparams, ...)
     result <- rbind(result, sresult)
+    
   }
+  
   return(result)
+  
 }

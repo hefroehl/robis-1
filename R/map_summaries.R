@@ -1,4 +1,4 @@
-map_summaries <- function(data, summary="simpson") {
+map_summaries <- function(data, summary="shannon") {
 
   if (summary == "simpson") {
     breaks <- c(0, 0.11, 0.23, 0.35, 0.48, 0.61, 0.76, 1.00)
