@@ -7,7 +7,7 @@
 get_summaries(table = "map5deg_with_geom", maxFeatures = NULL, ...)
 }
 \arguments{
-\item{table}{table}
+\item{table}{table, one of one of \code{map5deg_with_geom}, \code{map1deg_with_geom}, \code{map05deg_with_geom}, \code{map01deg_with_geom}}
 
 \item{maxFeatures}{maximum number of features}
 

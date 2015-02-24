@@ -6,8 +6,10 @@
 #' @param summary summary name to be used, either \code{simpson} or \code{shannon}
 map_summaries <- function(data, summary="shannon") {
 
-  if (! summary %in% c("simpson", "shannon")) {
-    stop("Summary must be one of simpson, shannon")
+  names <- c("simpson", "shannon")
+  
+  if (! summary %in% names) {
+    stop(paste0("Summary must be one of ", paste(names, collapse=", ")))
   }
   
   if (summary == "simpson") {

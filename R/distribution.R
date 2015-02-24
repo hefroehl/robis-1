@@ -10,8 +10,10 @@
 #' @return distribution data
 get_distribution <- function(identifier, table="dist_sp_5deg", maxFeatures=NULL, ...) {
   
-  if (! table %in% c("dist_sp_5deg", "dist_sp_1deg", "dist_sp_05deg", "dist_sp_01deg")) {
-    stop("Table must be one of dist_sp_5deg, dist_sp_1deg, dist_sp_05deg, dist_sp_01deg")
+  tables <- c("dist_sp_5deg", "dist_sp_1deg", "dist_sp_05deg", "dist_sp_01deg")
+  
+  if (! table %in% tables) {
+    stop(paste0("Table must be one of ", paste(tables, collapse=", ")))
   }
   
   viewparams <- NULL
