@@ -13,7 +13,7 @@ install_github("pieterprovoost/robis")
 
 [AphiaID](#aphiaid)  
 [Occurrences](#occurrences)  
-[Gridded species distribution](#distribution)  
+[Gridded taxon distribution](#distribution)  
 [Bodiversity indices](#biodiversity)  
 
 <a name="aphiaid"></a>
@@ -73,7 +73,7 @@ map_occurrences(data, color="resname")
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map2.png)
 
 <a name="distribution"></a>
-### Gridded species distribution
+### Gridded taxon distribution
 
 ```R
 data <- get_distribution("Mola mola")
