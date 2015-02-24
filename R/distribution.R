@@ -2,7 +2,7 @@
 #' 
 #' Retrieves distribution data
 #' 
-#' @param identifier species name
+#' @param identifier taxon name
 #' @param table table, one of \code{dist_sp_5deg}, \code{dist_sp_1deg}, \code{dist_sp_05deg}, \code{dist_sp_01deg}
 #' @param maxFeatures maximum number of features
 #' @param ... additional arguments for \code{\link{wfs_request}}
@@ -19,6 +19,7 @@ get_distribution <- function(identifier, table="dist_sp_5deg", maxFeatures=NULL,
   viewparams <- NULL
   viewparams[["where"]] <- paste0("scientific='", identifier, "'")
   viewparams[["table"]] <- table
+  viewparams[["count_column"]] <- "nincl"
 
   return(wfs_request("OBIS:dist_sp", viewparams=viewparams, maxFeatures=maxFeatures, ...))
   

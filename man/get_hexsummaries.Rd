@@ -7,7 +7,7 @@
 get_hexsummaries(typeName = "hexgrid4", maxFeatures = NULL, ...)
 }
 \arguments{
-\item{typeName}{feature type name, one of \code{hexgrid1}, \code{hexgrid2}, \code{hexgrid3}, \code{hexgrid4}, \code{hexgrid5}}
+\item{typeName}{feature type name, one of \code{hexgrid1}, \code{hexgrid2}, \code{hexgrid3}, \code{hexgrid4}, \code{hexgrid5}, \code{hexgrid6}}
 
 \item{maxFeatures}{maximum number of features}
 
