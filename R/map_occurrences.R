@@ -1,3 +1,9 @@
+#' Occurrence map
+#' 
+#' Creates a map from occurrence data
+#' 
+#' @param data data frame from \code{\link{get_occurrences}}
+#' @param color attribute to be used for color coding
 map_occurrences <- function(data, color="tname") {
   
   world <- map_data(map="world")

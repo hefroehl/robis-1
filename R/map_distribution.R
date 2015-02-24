@@ -1,3 +1,8 @@
+#' Distribution map
+#' 
+#' Creates a map from distribution data
+#' 
+#' @param data data frame from \code{\link{get_distribution}}
 map_distribution <- function(data) {
 
   world <- map_data(map="world")

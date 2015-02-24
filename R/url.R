@@ -1,11 +1,20 @@
-wms_url <- function(service) {
+#' WMS URL
+#' 
+#' Returns the OBIS WMS URL
+wms_url <- function() {
   return("http://www.iobis.org/geoserver/wms")
 }
 
-wfs_url <- function(service) {
+#' WFS URL
+#' 
+#' Returns the OBIS WFS URL
+wfs_url <- function() {
   return("http://www.iobis.org/geoserver/OBIS/ows")
 }
 
+#' AphiaID URL
+#' 
+#' Returns the WoRMS AphiaID service URL
 aphia_url <- function() {
   return("http://www.marinespecies.org/aphia.php?p=soap")
 }

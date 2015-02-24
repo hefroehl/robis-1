@@ -1,3 +1,13 @@
+#' Occurrences
+#' 
+#' Retrieves occurrence data
+#' 
+#' @param identifiers vector of identifiers, either species names or AphiaIDs
+#' @param filter list of filters
+#' @param where explicit where clause
+#' @param ... additional arguments for \code{\link{wfs_request}}
+#' 
+#' @return occurrence data 
 get_occurrences <- function(identifiers, filter=NULL, where=NULL, ...) {
   
   result <- NULL

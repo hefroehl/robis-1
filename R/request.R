@@ -1,3 +1,17 @@
+#' WFS request
+#' 
+#' Makes a WFS request to OBIS
+#'
+#' @param typeName feature type name
+#' @param version service version
+#' @param request operation name
+#' @param outputFormat output format, only csv is supported
+#' @param maxFeatures maximum number of features
+#' @param bbox bounding box as \code{c(min_longitude, min_latitude, max_longitude, max_latitude)}
+#' @param propertyName vector of attributes to be returned
+#' @param viewparams viewparams
+#'
+#' @return data frame
 wfs_request <- function(typeName, version="1.0.0", request="GetFeature", outputFormat="csv", maxFeatures=100, bbox=c(-180, -90, 180, 90), propertyName=NULL, viewparams=NULL) {
 
   url <- wfs_url()

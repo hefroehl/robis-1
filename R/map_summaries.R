@@ -1,3 +1,9 @@
+#' Summary map
+#' 
+#' Creates a map from summary data
+#' 
+#' @param data data frame from \code{\link{get_summaries}} or \code{\link{get_hexsummaries}}
+#' @param summary summary name to be used
 map_summaries <- function(data, summary="shannon") {
 
   if (summary == "simpson") {
