@@ -3,9 +3,13 @@
 #' Creates a map from summary data
 #' 
 #' @param data data frame from \code{\link{get_summaries}} or \code{\link{get_hexsummaries}}
-#' @param summary summary name to be used
+#' @param summary summary name to be used, either \code{simpson} or \code{shannon}
 map_summaries <- function(data, summary="shannon") {
 
+  if (! summary %in% c("simpson", "shannon")) {
+    stop("Summary must be one of simpson, shannon")
+  }
+  
   if (summary == "simpson") {
     breaks <- c(0, 0.11, 0.23, 0.35, 0.48, 0.61, 0.76, 1.00)
     labels <- c("0.00-0.11", ">0.11-0.23", ">0.23-0.35", ">0.35-0.48", ">0.48-0.61", ">0.61-0.76", ">0.76-1.00")

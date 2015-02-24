@@ -9,7 +9,7 @@ map_summaries(data, summary = "shannon")
 \arguments{
 \item{data}{data frame from \code{\link{get_summaries}} or \code{\link{get_hexsummaries}}}
 
-\item{summary}{summary name to be used}
+\item{summary}{summary name to be used, either \code{simpson} or \code{shannon}}
 }
 \description{
 Creates a map from summary data
