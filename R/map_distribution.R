@@ -25,7 +25,6 @@ map_distribution <- function(data) {
       values=c("#56B4E9", "green", "yellow", "orange", "red")) +
     geom_polygon(data = world, aes(long, lat, group=group), fill="gray90", color="gray90", size=0.2) +
     labs(x="", y="") +
-    theme_bw(base_size=14) +
     theme(
       legend.position="bottom", 
       legend.key=element_blank(), 
@@ -42,7 +41,6 @@ map_distribution <- function(data) {
       panel.grid.minor=element_blank(),
       plot.background=element_blank()
     ) +
-    guides(col = guide_legend(nrow=2)) +
     coord_fixed(ratio=1)
   
   print(p)

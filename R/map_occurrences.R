@@ -12,7 +12,6 @@ map_occurrences <- function(data, color="tname") {
     geom_polygon(aes(group=group), fill="gray90", color="gray90", size=0.2) +
     geom_point(data=data, aes_string("longitude", "latitude", color=color), alpha=0.4, size=3) +
     labs(x="", y="") +
-    theme_bw(base_size=14) +
     theme(
       legend.position="bottom", 
       legend.key=element_blank(), 
@@ -29,7 +28,6 @@ map_occurrences <- function(data, color="tname") {
       panel.grid.minor=element_blank(),
       plot.background=element_blank()
     ) +
-    guides(col = guide_legend(nrow=2)) +
     coord_fixed(ratio=1)
   
   print(p)
