@@ -10,7 +10,7 @@ get_distribution(identifier, table = "dist_sp_5deg", maxFeatures = NULL,
 \arguments{
 \item{identifier}{species name}
 
-\item{table}{table}
+\item{table}{table, one of \code{dist_sp_5deg}, \code{dist_sp_1deg}, \code{dist_sp_05deg}, \code{dist_sp_01deg}}
 
 \item{maxFeatures}{maximum number of features}
 
