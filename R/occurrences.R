@@ -2,7 +2,7 @@
 #' 
 #' Retrieves occurrence data
 #' 
-#' @param identifiers vector of identifiers, these can be species names, AphiaIDs, OBIS ids, or storedpaths
+#' @param identifiers vector of identifiers, these can be species names, AphiaIDs, OBIS Taxon IDs, or storedpaths
 #' @param idColumn which column to use when the identifier is an id, one of \code{valid_aphia_id}, \code{valid_id}
 #' @param filter list of filters
 #' @param where explicit where clause
