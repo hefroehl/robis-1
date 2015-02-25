@@ -71,16 +71,16 @@ data <- get_occurrences("Abra alba", where="monthcollected > 8")
 # create map
 
 map_occurrences(data)
-
-# zoom map
-
-m <- map_occurrences(d)
-m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
 ```
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map.png)
 
 ```R
+# zoom map
+
+m <- map_occurrences(d)
+m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
+
 # change color criterium
 
 data <- get_occurrences(get_aphiaid("Balaenoptera musculus"),
