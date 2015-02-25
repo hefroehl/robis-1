@@ -4,13 +4,15 @@
 \alias{get_occurrences}
 \title{Occurrences}
 \usage{
-get_occurrences(identifiers, id = "aphia", filter = NULL, where = NULL,
-  ...)
+get_occurrences(identifiers, id = "aphia", children = FALSE,
+  filter = NULL, where = NULL, ...)
 }
 \arguments{
 \item{identifiers}{vector of identifiers, these can be species names, AphiaIDs, OBIS Taxon IDs, or storedpaths}
 
 \item{id}{which id to use when the identifier is an id, one of \code{aphia}, \code{obis}}
+
+\item{children}{include child taxa, only used when \code{id} equals \code{obis}}
 
 \item{filter}{list of filters}
 

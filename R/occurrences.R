@@ -4,12 +4,13 @@
 #' 
 #' @param identifiers vector of identifiers, these can be species names, AphiaIDs, OBIS Taxon IDs, or storedpaths
 #' @param id which id to use when the identifier is an id, one of \code{aphia}, \code{obis}
+#' @param children include child taxa, only used when \code{id} equals \code{obis}
 #' @param filter list of filters
 #' @param where explicit where clause
 #' @param ... additional arguments for \code{\link{wfs_request}}
 #' 
 #' @return occurrence data 
-get_occurrences <- function(identifiers, id="aphia", filter=NULL, where=NULL, ...) {
+get_occurrences <- function(identifiers, id="aphia", children=FALSE, filter=NULL, where=NULL, ...) {
   
   result <- NULL
 
@@ -31,10 +32,14 @@ get_occurrences <- function(identifiers, id="aphia", filter=NULL, where=NULL, ..
     if (grepl("(x[0-9]+)+x$", identifier)) {
       
       m <- regexpr("[0-9]+x$", identifier)
-      id <- regmatches(identifier, m)
-      id <- substr(id, 1, nchar(id) - 1)
-      cond <- c(cond, paste0("valid_id=", id, " or storedpath like '", identifier, "%'"))
+      oid <- regmatches(identifier, m)
+      oid <- substr(id, 1, nchar(id) - 1)
+      cond <- c(cond, paste0("valid_id=", oid, " or storedpath like '", identifier, "%'"))
             
+    } else if (id == "obis" & children == TRUE) {
+      
+      cond <- c(cond, paste0("valid_id=", identifier, " or storedpath like '%x", identifier, "x%'"))
+      
     } else {
       
       if(!is.na(as.numeric(identifier))) {
