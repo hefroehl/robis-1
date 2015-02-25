@@ -4,10 +4,13 @@
 \alias{get_occurrences}
 \title{Occurrences}
 \usage{
-get_occurrences(identifiers, filter = NULL, where = NULL, ...)
+get_occurrences(identifiers, idColumn = "valid_aphia_id", filter = NULL,
+  where = NULL, ...)
 }
 \arguments{
-\item{identifiers}{vector of identifiers, either species names or AphiaIDs}
+\item{identifiers}{vector of identifiers, these can be species names, AphiaIDs, OBIS ids, or storedpaths}
+
+\item{idColumn}{which column to use when the identifier is an id}
 
 \item{filter}{list of filters}
 

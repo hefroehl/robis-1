@@ -2,13 +2,18 @@
 #' 
 #' Retrieves occurrence data
 #' 
-#' @param identifiers vector of identifiers, either species names or AphiaIDs
+#' @param identifiers vector of identifiers, these can be species names, AphiaIDs, OBIS ids, or storedpaths
+#' @param idColumn which column to use when the identifier is an id
 #' @param filter list of filters
 #' @param where explicit where clause
 #' @param ... additional arguments for \code{\link{wfs_request}}
 #' 
 #' @return occurrence data 
-get_occurrences <- function(identifiers, filter=NULL, where=NULL, ...) {
+get_occurrences <- function(identifiers, idColumn="valid_aphia_id", filter=NULL, where=NULL, ...) {
+  
+  column <- "tname"
+  pathColumn <- "storedpath"
+  pathIdColumn <- "valid_id"
   
   result <- NULL
 
@@ -21,26 +26,39 @@ get_occurrences <- function(identifiers, filter=NULL, where=NULL, ...) {
   }
   
   for (identifier in identifiers) {
+
+    cond <- NULL
     
     sfilter <- filter
     sfilter <- sapply(sfilter, quote)
-    
-    if(!is.na(as.numeric(identifier))) {
-      sfilter[["valid_aphia_id"]] <- identifier  
+
+    if (grepl("(x[0-9]+)+$", identifier)) {
+      
+      path <- TRUE 
+      m <- regexpr("[0-9]+$", identifier)
+      id <- regmatches(identifier, m)
+      cond <- c(cond, paste0(pathIdColumn, "=", id, " or ", pathColumn, " like '", identifier, "%'"))
+            
     } else {
-      sfilter[["tname"]] <- quote(identifier)
+      
+      path <- FALSE      
+      if(!is.na(as.numeric(identifier))) {
+        sfilter[[idColumn]] <- identifier  
+      } else {
+        sfilter[[column]] <- quote(identifier)
+      }
+      
     }
     
-    cond <- NULL
     for (name in names(sfilter)) {
       cond <- c(cond, paste0(name, "=", sfilter[[name]]))
     }
 
     viewparams <- NULL
     if (is.null(where)) {
-      viewparams[["where"]] <- paste(cond, collapse=" and ")
+      viewparams[["where"]] <- paste("(", cond, ")", sep="", collapse=" and ")
     } else {
-      viewparams[["where"]] <- paste0(paste(cond, collapse=" and "), " and (", where, ")")
+      viewparams[["where"]] <- paste0(paste(cond, sep="", collapse=" and "), " and (", where, ")")
     }
 
     sresult <- wfs_request("OBIS:points_ex", viewparams=viewparams, ...)

@@ -6,7 +6,7 @@
 \usage{
 wfs_request(typeName, version = "1.0.0", request = "GetFeature",
   outputFormat = "csv", maxFeatures = 100, bbox = c(-180, -90, 180, 90),
-  propertyName = NULL, viewparams = NULL)
+  propertyName = NULL, viewparams = NULL, verbose = FALSE)
 }
 \arguments{
 \item{typeName}{feature type name}
