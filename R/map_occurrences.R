@@ -31,5 +31,6 @@ map_occurrences <- function(data, color="tname") {
     coord_fixed(ratio=1)
   
   print(p)
+  return(p)
 
 }
