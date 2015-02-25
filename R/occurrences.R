@@ -3,17 +3,13 @@
 #' Retrieves occurrence data
 #' 
 #' @param identifiers vector of identifiers, these can be species names, AphiaIDs, OBIS Taxon IDs, or storedpaths
-#' @param idColumn which column to use when the identifier is an id, one of \code{valid_aphia_id}, \code{valid_id}
+#' @param id which id to use when the identifier is an id, one of \code{aphia}, \code{obis}
 #' @param filter list of filters
 #' @param where explicit where clause
 #' @param ... additional arguments for \code{\link{wfs_request}}
 #' 
 #' @return occurrence data 
-get_occurrences <- function(identifiers, idColumn="valid_aphia_id", filter=NULL, where=NULL, ...) {
-  
-  column <- "tname"
-  pathColumn <- "storedpath"
-  pathIdColumn <- "valid_id"
+get_occurrences <- function(identifiers, id="aphia", filter=NULL, where=NULL, ...) {
   
   result <- NULL
 
@@ -34,18 +30,20 @@ get_occurrences <- function(identifiers, idColumn="valid_aphia_id", filter=NULL,
 
     if (grepl("(x[0-9]+)+$", identifier)) {
       
-      path <- TRUE 
       m <- regexpr("[0-9]+$", identifier)
       id <- regmatches(identifier, m)
-      cond <- c(cond, paste0(pathIdColumn, "=", id, " or ", pathColumn, " like '", identifier, "%'"))
+      cond <- c(cond, paste0("valid_id=", id, " or storedpath like '", identifier, "%'"))
             
     } else {
       
-      path <- FALSE      
       if(!is.na(as.numeric(identifier))) {
-        sfilter[[idColumn]] <- identifier  
+        if (id == "aphia") {
+          sfilter[["valid_aphia_id"]] <- identifier    
+        } else if (id =="obis") {
+          sfilter[["valid_id"]] <- identifier    
+        }
       } else {
-        sfilter[[column]] <- quote(identifier)
+        sfilter[["tname"]] <- quote(identifier)
       }
       
     }
