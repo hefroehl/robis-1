@@ -33,7 +33,7 @@ get_occurrences <- function(identifiers, id="aphia", children=FALSE, filter=NULL
       
       m <- regexpr("[0-9]+x$", identifier)
       oid <- regmatches(identifier, m)
-      oid <- substr(id, 1, nchar(id) - 1)
+      oid <- substr(oid, 1, nchar(oid) - 1)
       cond <- c(cond, paste0("valid_id=", oid, " or storedpath like '", identifier, "%'"))
             
     } else if (id == "obis" & children == TRUE) {
