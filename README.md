@@ -33,14 +33,23 @@ get_aphiaid(c("Abra alba", "Lanice"))
 ### Occurrences
 
 ```R
-# find by AphiaId
-
-data <- get_occurrences(137094)
-
-# find by species name
+# find by species name (species only)
 
 names <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
 data <- get_occurrences(names)
+
+# find by AphiaId (species only)
+
+data <- get_occurrences(137094)
+
+# find by OBIS Taxon ID (species only)
+
+data <- get_occurrences(409234, idColumn="valid_id")
+
+# find by storedpath (any taxon level)
+
+data <- get_occurrences("x739909x738303x741923x762719x766931
+  x766932x642142x778875x781762x778804x696387x752492x739483x769778")
 
 # bounding box
 
