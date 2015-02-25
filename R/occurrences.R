@@ -28,10 +28,11 @@ get_occurrences <- function(identifiers, id="aphia", filter=NULL, where=NULL, ..
     sfilter <- filter
     sfilter <- sapply(sfilter, quote)
 
-    if (grepl("(x[0-9]+)+$", identifier)) {
+    if (grepl("(x[0-9]+)+x$", identifier)) {
       
-      m <- regexpr("[0-9]+$", identifier)
+      m <- regexpr("[0-9]+x$", identifier)
       id <- regmatches(identifier, m)
+      id <- substr(id, 1, nchar(id) - 1)
       cond <- c(cond, paste0("valid_id=", id, " or storedpath like '", identifier, "%'"))
             
     } else {
