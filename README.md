@@ -46,6 +46,10 @@ data <- get_occurrences(137094)
 
 data <- get_occurrences(409234, id="obis")
 
+# find by OBIS Taxon ID (any taxon level)
+
+data <- get_occurrences(780806, id="obis", children=TRUE)
+
 # find by storedpath (any taxon level)
 
 data <- get_occurrences("x739909x738303x741923x762719x766931
