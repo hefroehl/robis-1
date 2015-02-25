@@ -46,7 +46,7 @@ data <- get_occurrences(137094)
 
 data <- get_occurrences(409234, id="obis")
 
-# find by OBIS Taxon ID (any taxon level)
+# find by OBIS Taxon ID (any taxon level, slow)
 
 data <- get_occurrences(780806, id="obis", children=TRUE)
 
