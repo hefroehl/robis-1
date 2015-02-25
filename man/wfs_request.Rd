@@ -24,6 +24,8 @@ wfs_request(typeName, version = "1.0.0", request = "GetFeature",
 \item{propertyName}{vector of attributes to be returned}
 
 \item{viewparams}{viewparams}
+
+\item{verbose}{verbose get request}
 }
 \value{
 data frame

@@ -10,7 +10,7 @@ get_occurrences(identifiers, idColumn = "valid_aphia_id", filter = NULL,
 \arguments{
 \item{identifiers}{vector of identifiers, these can be species names, AphiaIDs, OBIS ids, or storedpaths}
 
-\item{idColumn}{which column to use when the identifier is an id}
+\item{idColumn}{which column to use when the identifier is an id, one of \code{valid_aphia_id}, \code{valid_id}}
 
 \item{filter}{list of filters}
 
