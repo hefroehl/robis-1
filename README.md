@@ -44,7 +44,7 @@ data <- get_occurrences(137094)
 
 # find by OBIS Taxon ID (species only)
 
-data <- get_occurrences(409234, idColumn="valid_id")
+data <- get_occurrences(409234, id="obis")
 
 # find by storedpath (any taxon level)
 
