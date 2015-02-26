@@ -76,7 +76,7 @@ map_occurrences(data)
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map.png)
 
 ```R
-# zoom map
+# map bounding box
 
 m <- map_occurrences(d)
 m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
