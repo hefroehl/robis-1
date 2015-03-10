@@ -130,7 +130,7 @@ map_summaries(data, "shannon")
 
 data <- get_occurrences("Abra alba", maxFeatures=100)
 geometry <- paste0("GEOMETRYCOLLECTION(", paste(data$geom, collapse=","), ")")
-data <- data[,c("id", "yearcollected", "monthcollected", "daycollected", "tname", "collectioncode", "locality")]
+data <- data[,c("id", "yearcollected", "tname", "collectioncode")]
 
-geo <- geojson(geometry, pretty=TRUE, data=data)
+geojson(geometry, pretty=TRUE, data=data)
 ```
