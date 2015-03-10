@@ -15,6 +15,7 @@ install_github("pieterprovoost/robis")
 [Occurrences](#occurrences)  
 [Gridded taxon distribution](#distribution)  
 [Bodiversity indices](#biodiversity)  
+[Export](#export)
 
 <a name="aphiaid"></a>
 ### AphiaID
@@ -121,3 +122,15 @@ map_summaries(data, "shannon")
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map5.png)
 
+<a name="export"></a>
+### Export
+
+```R
+# export to GeoJSON using the rwkt package
+
+data <- get_occurrences("Abra alba", maxFeatures=100)
+geometry <- paste0("GEOMETRYCOLLECTION(", paste(data$geom, collapse=","), ")")
+data <- data[,c("id", "yearcollected", "monthcollected", "daycollected", "tname", "collectioncode", "locality")]
+
+geo <- geojson(geometry, pretty=TRUE, data=data)
+```
