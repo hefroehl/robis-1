@@ -1,0 +1,2106 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162905474,
+                    "yearcollected": 2000,
+                    "monthcollected": 3,
+                    "daycollected": 30,
+                    "tname": "Abra alba",
+                    "collectioncode": 7871,
+                    "locality": "North Channel - F02"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162906394,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7852,
+                    "locality": "IS1 (NMMP site #825)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162949339,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7847,
+                    "locality": "Station G1"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162954302,
+                    "yearcollected": 1989,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7846,
+                    "locality": "Station A3"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162956477,
+                    "yearcollected": 1995,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7848,
+                    "locality": "Station A1000"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.8706,
+                    50.6142
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162918690,
+                    "yearcollected": 1993,
+                    "monthcollected": 4,
+                    "daycollected": 27,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Selsey Bill"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162949343,
+                    "yearcollected": 1998,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7849,
+                    "locality": "Station E500"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162976712,
+                    "yearcollected": 1989,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7846,
+                    "locality": "Station C2"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162954304,
+                    "yearcollected": 1989,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7846,
+                    "locality": "Station E1"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162942200,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7847,
+                    "locality": "Station G2"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162958533,
+                    "yearcollected": 1995,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7848,
+                    "locality": "Station A100"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162960345,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984009,
+                    "yearcollected": 1999,
+                    "monthcollected": 5,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 7885,
+                    "locality": "IS1 (NMMP site #825)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162971157,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.3725,
+                    53.9383
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984730,
+                    "yearcollected": 1993,
+                    "monthcollected": 5,
+                    "daycollected": 25,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Off Morecambe Bay"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162988469,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162977693,
+                    "yearcollected": 1998,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7849,
+                    "locality": "Station E750"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984039,
+                    "yearcollected": 2000,
+                    "monthcollected": 3,
+                    "daycollected": 28,
+                    "tname": "Abra alba",
+                    "collectioncode": 7869,
+                    "locality": "IS1 (NMMP site #825)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984028,
+                    "yearcollected": 1999,
+                    "monthcollected": 5,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 7885,
+                    "locality": "IS1 (NMMP site #825)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5466,
+                    50.6818
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984651,
+                    "yearcollected": 2001,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7948,
+                    "locality": "5824"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162988003,
+                    "yearcollected": 1998,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7849,
+                    "locality": "Station E100"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162953077,
+                    "yearcollected": 1989,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7846,
+                    "locality": "Station A1"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1697,
+                    54.0253
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162951442,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7841,
+                    "locality": "CL3"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162953078,
+                    "yearcollected": 1989,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7846,
+                    "locality": "Station A1"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162962951,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162954305,
+                    "yearcollected": 1995,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7848,
+                    "locality": "Station B500"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162954303,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7847,
+                    "locality": "Station E1"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162929346,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7847,
+                    "locality": "Station D1"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.7179,
+                    57.9348
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162974830,
+                    "yearcollected": 1994,
+                    "monthcollected": 2,
+                    "daycollected": 4,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Minches"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.7179,
+                    57.9348
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162976327,
+                    "yearcollected": 1994,
+                    "monthcollected": 2,
+                    "daycollected": 4,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Minches"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.8798,
+                    55.8894
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162977121,
+                    "yearcollected": 1989,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 7846,
+                    "locality": "Station C3"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.2305,
+                    52.9364
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984723,
+                    "yearcollected": 1993,
+                    "monthcollected": 5,
+                    "daycollected": 14,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Alternative location"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984062,
+                    "yearcollected": 2001,
+                    "monthcollected": 3,
+                    "daycollected": 14,
+                    "tname": "Abra alba",
+                    "collectioncode": 7858,
+                    "locality": "North Channel - F07"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.2305,
+                    52.9364
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984719,
+                    "yearcollected": 1993,
+                    "monthcollected": 5,
+                    "daycollected": 14,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Alternative location"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.2305,
+                    52.9364
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984722,
+                    "yearcollected": 1993,
+                    "monthcollected": 5,
+                    "daycollected": 14,
+                    "tname": "Abra alba",
+                    "collectioncode": 7842,
+                    "locality": "Alternative location"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162970653,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162971489,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162962584,
+                    "yearcollected": 1998,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7877,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162905696,
+                    "yearcollected": 2002,
+                    "monthcollected": 3,
+                    "daycollected": 20,
+                    "tname": "Abra alba",
+                    "collectioncode": 7856,
+                    "locality": "IS1 (NMMP Station #825)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162961601,
+                    "yearcollected": 1995,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7875,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162962181,
+                    "yearcollected": 1995,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7875,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.2907,
+                    54.0141
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162939811,
+                    "yearcollected": 1999,
+                    "monthcollected": 9,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 7951,
+                    "locality": "Samples 812-835"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162984013,
+                    "yearcollected": 1999,
+                    "monthcollected": 5,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 7885,
+                    "locality": "IS1 (NMMP site #825)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6771,
+                    54.6458
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162962949,
+                    "yearcollected": 1997,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7876,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6719,
+                    54.7356
+                ]
+            },
+            "properties": [
+                {
+                    "id": 162971174,
+                    "yearcollected": 1998,
+                    "monthcollected": 7,
+                    "daycollected": 2,
+                    "tname": "Abra alba",
+                    "collectioncode": 7877,
+                    "locality": "North Channel"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.1432,
+                    58.5253
+                ]
+            },
+            "properties": [
+                {
+                    "id": 157083933,
+                    "yearcollected": 1987,
+                    "monthcollected": 10,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1315,
+                    "locality": "14/11"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.0937,
+                    56.6034
+                ]
+            },
+            "properties": [
+                {
+                    "id": 157173788,
+                    "yearcollected": 1993,
+                    "monthcollected": 9,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1325,
+                    "locality": "SW 29/12"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.1884,
+                    58.0735
+                ]
+            },
+            "properties": [
+                {
+                    "id": 157089662,
+                    "yearcollected": 1987,
+                    "monthcollected": 5,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1151,
+                    "locality": "Beatrice"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.1743,
+                    57.6113
+                ]
+            },
+            "properties": [
+                {
+                    "id": 157150793,
+                    "yearcollected": 1987,
+                    "monthcollected": 10,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1317,
+                    "locality": "21/12"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.9377,
+                    53.7016
+                ]
+            },
+            "properties": [
+                {
+                    "id": 157045761,
+                    "yearcollected": 1992,
+                    "monthcollected": 12,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1142,
+                    "locality": "Ann"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.2168,
+                    58.0384
+                ]
+            },
+            "properties": [
+                {
+                    "id": 157083923,
+                    "yearcollected": 1987,
+                    "monthcollected": 10,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1316,
+                    "locality": "16/27B"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5863,
+                    51.4005
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151824303,
+                    "yearcollected": 1993,
+                    "monthcollected": 8,
+                    "daycollected": 10,
+                    "tname": "Abra alba",
+                    "collectioncode": 1665,
+                    "locality": "Off Mussel Bank, Long Reach (Medway Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5863,
+                    51.4005
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151825024,
+                    "yearcollected": 1993,
+                    "monthcollected": 8,
+                    "daycollected": 10,
+                    "tname": "Abra alba",
+                    "collectioncode": 1665,
+                    "locality": "Victoria Bouy off Grain Pier (Medway Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.3841,
+                    53.0234
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152315379,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 15,
+                    "tname": "Abra alba",
+                    "collectioncode": 1589,
+                    "locality": "NW of Woolpack (The Wash)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.2305,
+                    52.9364
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152315784,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 15,
+                    "tname": "Abra alba",
+                    "collectioncode": 1589,
+                    "locality": "SE of Roaring Middle bell (The Wash)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.914,
+                    54.7501
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151871870,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1544,
+                    "locality": "MM dumping ground, Station 5 (Teesbay)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.1658,
+                    54.1119
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152174551,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 16,
+                    "tname": "Abra alba",
+                    "collectioncode": 1788,
+                    "locality": "FB91_17 (Filey Bay)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5863,
+                    51.4005
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151824579,
+                    "yearcollected": 1993,
+                    "monthcollected": 8,
+                    "daycollected": 10,
+                    "tname": "Abra alba",
+                    "collectioncode": 1665,
+                    "locality": "Sharfleet Creek (Medway Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.8367,
+                    53.1033
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151951518,
+                    "yearcollected": 1993,
+                    "monthcollected": 9,
+                    "daycollected": 29,
+                    "tname": "Abra alba",
+                    "collectioncode": 1797,
+                    "locality": "Race93_21m2 (Norfolk coast)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.326,
+                    53.9344
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152004432,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 25,
+                    "tname": "Abra alba",
+                    "collectioncode": 1790,
+                    "locality": "AT91_14 M3 (Holderness Coast)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152038456,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 8. (scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.1918,
+                    51.8353
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152275270,
+                    "yearcollected": 1992,
+                    "monthcollected": 11,
+                    "daycollected": 13,
+                    "tname": "Abra alba",
+                    "collectioncode": 1551,
+                    "locality": "NW of Stone Point (Hamford Water)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152056057,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 13,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 11. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.4415,
+                    55.9146
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151927213,
+                    "yearcollected": 1991,
+                    "monthcollected": 9,
+                    "daycollected": 19,
+                    "tname": "Abra alba",
+                    "collectioncode": 1618,
+                    "locality": "Station 6 (Hound Point, Firth of Forth)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.0775,
+                    52.8493
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152069899,
+                    "yearcollected": 1985,
+                    "monthcollected": 9,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1752,
+                    "locality": "11 (The Wash)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152123271,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 13,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 10. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.0718,
+                    52.6696
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152305638,
+                    "yearcollected": 1995,
+                    "monthcollected": 7,
+                    "daycollected": 14,
+                    "tname": "Abra alba",
+                    "collectioncode": 1706,
+                    "locality": "Aberamffra Harbour (Mawddach estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.9164,
+                    52.0223
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152247698,
+                    "yearcollected": 1997,
+                    "monthcollected": 3,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 1718,
+                    "locality": "Inshore Newport (Newport)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6862,
+                    55.9578
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151883571,
+                    "yearcollected": 1987,
+                    "monthcollected": 6,
+                    "daycollected": 24,
+                    "tname": "Abra alba",
+                    "collectioncode": 1408,
+                    "locality": "Mouth of Achnamara Arm, opposite Rubha Cladh Eoin"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.2305,
+                    52.9364
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152315458,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 15,
+                    "tname": "Abra alba",
+                    "collectioncode": 1589,
+                    "locality": "NW of Roaring Middle (The Wash)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.6866,
+                    55.2937
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152347718,
+                    "yearcollected": 1992,
+                    "monthcollected": 8,
+                    "daycollected": 28,
+                    "tname": "Abra alba",
+                    "collectioncode": 1539,
+                    "locality": "NE Coquet Estuary (Coquet Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.1918,
+                    51.8353
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152359917,
+                    "yearcollected": 1992,
+                    "monthcollected": 11,
+                    "daycollected": 13,
+                    "tname": "Abra alba",
+                    "collectioncode": 1551,
+                    "locality": "NE of Skipper's Island (Hamford Water)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.5863,
+                    51.4005
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151824949,
+                    "yearcollected": 1993,
+                    "monthcollected": 8,
+                    "daycollected": 11,
+                    "tname": "Abra alba",
+                    "collectioncode": 1665,
+                    "locality": "Horse Reach (Swale Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.6703,
+                    50.3192
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151851090,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 17,
+                    "tname": "Abra alba",
+                    "collectioncode": 1624,
+                    "locality": "Bodmin Pill (Fowey Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.4448,
+                    56.0045
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151877989,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 28,
+                    "tname": "Abra alba",
+                    "collectioncode": 1614,
+                    "locality": "Station DB (Firth of Forth)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.1918,
+                    51.8353
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151906044,
+                    "yearcollected": 1992,
+                    "monthcollected": 11,
+                    "daycollected": 13,
+                    "tname": "Abra alba",
+                    "collectioncode": 1551,
+                    "locality": "SE of Pewit Island (Hamford Water)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151930766,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 21. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152127494,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 11,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 36. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.1203,
+                    54.8946
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151951497,
+                    "yearcollected": 1989,
+                    "monthcollected": 9,
+                    "daycollected": 19,
+                    "tname": "Abra alba",
+                    "collectioncode": 1521,
+                    "locality": "Station 2 (Loch Ryan)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.1893,
+                    53.5729
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151993288,
+                    "yearcollected": 1995,
+                    "monthcollected": 6,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1771,
+                    "locality": "108 (Humber Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.7068,
+                    50.5276
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152105161,
+                    "yearcollected": 1994,
+                    "monthcollected": 5,
+                    "daycollected": 21,
+                    "tname": "Abra alba",
+                    "collectioncode": 1731,
+                    "locality": "grab site thirty seven, Lyme Bay (Lyme Bay)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.2776,
+                    60.3221
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152123270,
+                    "yearcollected": 1962,
+                    "monthcollected": 10,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 1580,
+                    "locality": "S of Flugarth pier (Dury Voe)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.9164,
+                    52.0223
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152106039,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1711,
+                    "locality": "NE of Fishguard (Cardigan Bay)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152131610,
+                    "yearcollected": 1993,
+                    "monthcollected": 7,
+                    "daycollected": 22,
+                    "tname": "Abra alba",
+                    "collectioncode": 1645,
+                    "locality": "Offshore Scalby (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152165518,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 11,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 59. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.6051,
+                    56.0025
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151927217,
+                    "yearcollected": 1991,
+                    "monthcollected": 9,
+                    "daycollected": 4,
+                    "tname": "Abra alba",
+                    "collectioncode": 1619,
+                    "locality": "Station 25 (Bo'ness, Forth Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.2105,
+                    52.4872
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152207630,
+                    "yearcollected": 1997,
+                    "monthcollected": 4,
+                    "daycollected": 6,
+                    "tname": "Abra alba",
+                    "collectioncode": 1717,
+                    "locality": "S Tywyn beach (Aberdyfi)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.9096,
+                    56.5803
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152015319,
+                    "yearcollected": 1990,
+                    "monthcollected": 6,
+                    "daycollected": 28,
+                    "tname": "Abra alba",
+                    "collectioncode": 1458,
+                    "locality": "Caol Châ<U+0080>¦rna (Loch Sunart)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.0016,
+                    57.1808
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152243083,
+                    "yearcollected": 1954,
+                    "monthcollected": 7,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1593,
+                    "locality": "Aberdeenshire inshore fishing ground (Aberdeenshir"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 152250062,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 10,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 53. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.4572,
+                    60.4128
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151840944,
+                    "yearcollected": 1990,
+                    "monthcollected": 6,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1582,
+                    "locality": "N of Voe of Scatsta (Sullom Voe)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6862,
+                    55.9578
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151883570,
+                    "yearcollected": 1987,
+                    "monthcollected": 6,
+                    "daycollected": 24,
+                    "tname": "Abra alba",
+                    "collectioncode": 1408,
+                    "locality": "Mouth of Achnamara Arm, opposite Rubha Cladh Eoin"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.4448,
+                    56.0045
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151887338,
+                    "yearcollected": 1992,
+                    "monthcollected": 4,
+                    "daycollected": 28,
+                    "tname": "Abra alba",
+                    "collectioncode": 1614,
+                    "locality": "Station DB (Firth of Forth)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.4415,
+                    55.9146
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151905527,
+                    "yearcollected": 1991,
+                    "monthcollected": 9,
+                    "daycollected": 19,
+                    "tname": "Abra alba",
+                    "collectioncode": 1618,
+                    "locality": "Station 4 (Hound Point, Firth of Forth)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.326,
+                    53.9344
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151918754,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 25,
+                    "tname": "Abra alba",
+                    "collectioncode": 1790,
+                    "locality": "AT91_22 M1 (Holderness Coast)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.6703,
+                    50.3192
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151919024,
+                    "yearcollected": 1991,
+                    "monthcollected": 8,
+                    "daycollected": 17,
+                    "tname": "Abra alba",
+                    "collectioncode": 1624,
+                    "locality": "New Quay Cellers (Fowey Estuary)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151923408,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 12,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 2. (scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151969818,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 17,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 22. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.465,
+                    54.2958
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151977522,
+                    "yearcollected": 1990,
+                    "monthcollected": 9,
+                    "daycollected": 11,
+                    "tname": "Abra alba",
+                    "collectioncode": 1646,
+                    "locality": "Wimpey Environmental Station 63. (Scarborough)"
+                }
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.765,
+                    56.7646
+                ]
+            },
+            "properties": [
+                {
+                    "id": 151979296,
+                    "yearcollected": 1970,
+                    "monthcollected": 1,
+                    "daycollected": 1,
+                    "tname": "Abra alba",
+                    "collectioncode": 1423,
+                    "locality": "Loch Ailort (Loch Ailort)"
+                }
+            ]
+        }
+    ]
+}
+
