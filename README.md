@@ -128,6 +128,9 @@ map_summaries(data, "shannon")
 ```R
 # export to GeoJSON using the rwkt package
 
+library(devtools)
+install_github("pieterprovoost/rwkt")
+
 data <- get_occurrences(743268, id="obis", children=TRUE, maxFeatures=5)
 geometry <- paste0("GEOMETRYCOLLECTION(", paste(data$geom, collapse=","), ")")
 data <- data[,c("id", "yearcollected", "tname", "collectioncode")]
