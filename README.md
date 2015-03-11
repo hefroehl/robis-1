@@ -128,9 +128,97 @@ map_summaries(data, "shannon")
 ```R
 # export to GeoJSON using the rwkt package
 
-data <- get_occurrences("Abra alba", maxFeatures=100)
+data <- get_occurrences(743268, id="obis", children=TRUE, maxFeatures=5)
 geometry <- paste0("GEOMETRYCOLLECTION(", paste(data$geom, collapse=","), ")")
 data <- data[,c("id", "yearcollected", "tname", "collectioncode")]
 
 geojson(geometry, pretty=TRUE, data=data)
+```
+
+```json
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.7082,
+                    44.4106
+                ]
+            },
+            "properties": {
+                "id": 149287642,
+                "yearcollected": 1996,
+                "tname": "Ampelisca diadema",
+                "collectioncode": "Laspibay-Black Sea"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    33.7072,
+                    44.4096
+                ]
+            },
+            "properties": {
+                "id": 149287011,
+                "yearcollected": 1996,
+                "tname": "Balanus improvisus",
+                "collectioncode": "Laspibay-Black Sea"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.109,
+                    42.2386
+                ]
+            },
+            "properties": {
+                "id": 146490918,
+                "yearcollected": 1999,
+                "tname": "Chthamalus stellatus",
+                "collectioncode": "pp"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.109,
+                    42.2386
+                ]
+            },
+            "properties": {
+                "id": 146490947,
+                "yearcollected": 2000,
+                "tname": "Balanus",
+                "collectioncode": "pp"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.109,
+                    42.2386
+                ]
+            },
+            "properties": {
+                "id": 146491001,
+                "yearcollected": 2001,
+                "tname": "Chthamalus stellatus",
+                "collectioncode": "pp"
+            }
+        }
+    ]
+}
 ```
