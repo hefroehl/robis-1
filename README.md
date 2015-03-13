@@ -124,10 +124,11 @@ map_summaries(data, "shannon")
 
 <a name="export"></a>
 ### Export
+#### Export to GeoJSON using the rwkt package
+
+See [here](https://github.com/pieterprovoost/robis/blob/master/eubranchus.geojson) for an example file
 
 ```R
-# export to GeoJSON using the rwkt package
-
 library(devtools)
 install_github("pieterprovoost/rwkt")
 library(rwkt)
