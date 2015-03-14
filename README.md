@@ -11,24 +11,10 @@ install_github("pieterprovoost/robis")
 
 ## Usage
 
-[AphiaID](#aphiaid)  
 [Occurrences](#occurrences)  
 [Gridded taxon distribution](#distribution)  
 [Bodiversity indices](#biodiversity)  
 [Export](#export)
-
-<a name="aphiaid"></a>
-### AphiaID
-
-```R
-# get AphiaID from WoRMS
-
-get_aphiaid(c("Abra alba", "Lanice"))
-```
-
-```text
-[1] "141433" "129697"
-```
 
 <a name="occurrences"></a>
 ### Occurrences
@@ -84,7 +70,7 @@ m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
 
 # change color criterium
 
-data <- get_occurrences(get_aphiaid("Balaenoptera musculus"),
+data <- get_occurrences("Balaenoptera musculus",
   where="resource_id = 22 or resource_id = 2553")
 map_occurrences(data, color="resname")
 ```
