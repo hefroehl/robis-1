@@ -11,10 +11,3 @@ wms_url <- function() {
 wfs_url <- function() {
   return("http://www.iobis.org/geoserver/OBIS/ows")
 }
-
-#' AphiaID URL
-#' 
-#' Returns the WoRMS AphiaID service URL
-aphia_url <- function() {
-  return("http://www.marinespecies.org/aphia.php?p=soap")
-}
