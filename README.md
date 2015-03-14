@@ -18,45 +18,62 @@ install_github("pieterprovoost/robis")
 
 <a name="occurrences"></a>
 ### Occurrences
+#### Find by species name
 
 ```R
-# find by species name (species only)
-
 names <- c("Carcharodon carcharias", "Mola mola", "Ursus maritimus", "Aptenodytes forsteri")
 data <- get_occurrences(names)
+````
 
-# find by AphiaId (species only)
+#### Find by AphiaID (species only)
 
+Finding species occurrences by AphiaID is considerable faster than by species name. AphiaIDs can be retrieved from WoRMS using [taxizesoap](https://github.com/ropensci/taxizesoap) or [get_aphiaid.R](https://gist.github.com/pieterprovoost/754d5363509e8e7176bc).
+
+```R
 data <- get_occurrences(137094)
+````
 
-# find by OBIS Taxon ID (species only)
+#### Find by OBIS Taxon ID
 
+Species:
+
+```R
 data <- get_occurrences(409234, id="obis")
+````
 
-# find by OBIS Taxon ID (any taxon level, slow)
+Higher level taxa (slow):
 
+````R
 data <- get_occurrences(780806, id="obis", children=TRUE)
+````
 
-# find by storedpath (any taxon level)
+#### Find by storedpath
 
+```R
 data <- get_occurrences("x739909x738303x741923x762719x766931
   x766932x642142x778875x781762x778804x696387x752492x739483x769778x")
+````
 
-# bounding box
+#### Bounding box
 
+```R
 data <- get_occurrences("Carcharodon carcharias", bbox=c(-180,-20,180,20))
+````
 
-# filter
+#### Filtering
 
+```R
 data <- get_occurrences("Abra alba", 
   filter=list(yearcollected=2010, institutioncode="Scottish Natural Heritage"))
 
 # explicit where clause
 
 data <- get_occurrences("Abra alba", where="monthcollected > 8")
+````
 
-# create map
+#### Create occurrence map
 
+```R
 map_occurrences(data)
 ```
 
