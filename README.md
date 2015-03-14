@@ -137,7 +137,7 @@ data <- get_occurrences(743268, id="obis", children=TRUE, maxFeatures=5)
 geometry <- paste0("GEOMETRYCOLLECTION(", paste(data$geom, collapse=","), ")")
 data <- data[,c("id", "yearcollected", "tname", "collectioncode")]
 
-geojson(geometry, pretty=TRUE, data=data)
+toGeoJSON(geometry, pretty=TRUE, data=data)
 ```
 
 ```json
