@@ -79,20 +79,22 @@ map_occurrences(data)
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map.png)
 
+#### Change occurrence map color criterium
+
 ```R
-# map bounding box
-
-m <- map_occurrences(d)
-m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
-
-# change color criterium
-
 data <- get_occurrences("Balaenoptera musculus",
   where="resource_id = 22 or resource_id = 2553")
 map_occurrences(data, color="resname")
 ```
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map2.png)
+
+#### Map bounding box
+
+```R
+m <- map_occurrences(d)
+m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
+```
 
 <a name="distribution"></a>
 ### Gridded taxon distribution
@@ -106,19 +108,18 @@ map_distribution(data)
 
 <a name="biodiversity"></a>
 ### Bodiversity indices
+#### C-squares
 
 ```R
-# c-squares
-
 data <- get_summaries()
 map_summaries(data, "shannon")
 ```
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map4.png)
 
-```R
-# hexgrid
+#### Hexgrid
 
+```R
 data <- get_hexsummaries()
 map_summaries(data, "shannon")
 ```
