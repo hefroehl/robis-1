@@ -79,7 +79,7 @@ map_occurrences(data)
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map.png)
 
-#### Change occurrence map color criterium
+#### Change color criterium
 
 ```R
 data <- get_occurrences("Balaenoptera musculus",
