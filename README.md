@@ -1,6 +1,6 @@
 # robis
 
-R package for retrieving data from the OBIS Web Services (under development)
+R package for retrieving data from the OBIS Web Services
 
 ## Install
 
