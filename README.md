@@ -1,6 +1,6 @@
 # robis
 
-R package for retrieving data from the OBIS Web Services (under development)
+R package for retrieving data from the OBIS Web Services
 
 ## Install
 
@@ -27,7 +27,7 @@ data <- get_occurrences(names)
 
 #### Find by AphiaID (species only)
 
-Finding species occurrences by AphiaID is considerable faster than by species name. AphiaIDs can be retrieved from WoRMS using [taxizesoap](https://github.com/ropensci/taxizesoap) or [get_aphiaid.R](https://gist.github.com/pieterprovoost/754d5363509e8e7176bc).
+Finding species occurrences by AphiaID is considerably faster than by species name. AphiaIDs can be retrieved from WoRMS using [taxizesoap](https://github.com/ropensci/taxizesoap) or [get_aphiaid.R](https://gist.github.com/pieterprovoost/754d5363509e8e7176bc).
 
 ```R
 data <- get_occurrences(137094)
