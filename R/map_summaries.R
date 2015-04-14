@@ -31,23 +31,26 @@ map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, lab
   
   world <- map_data(map="world")
   
-  polyg <- data.frame(long=numeric(), lat=numeric(), group=numeric(), summary=numeric(), stringsAsFactors=FALSE)
+  polyg <- matrix(nrow=0, ncol=4)
   row <- 1
   for (i in 1:nrow(data)) {
     wkt <- readWKT(data$geom[i])
-    df <- fortify(wkt)
-    df$group <- i
-    df$summary <- data[summary][i,1]
-    if (is.null(polyg) || nrow(polyg) < (row + nrow(df))) {
-      n <- nrow(df) * 1000
-      polyg <- rbind(polyg, data.frame(long=rep(as.numeric(NA), n), lat=rep(as.numeric(NA), n), group=rep(as.numeric(NA), n), summary=rep(as.numeric(NA), n), bin=rep(as.numeric(NA), n)) )
+    fort <- fortify(wkt)
+    d <- nrow(fort)
+    group <- i
+    summ <- data[summary][i, 1]
+    if (nrow(polyg) < (row + d)) {
+      n <- d * 1000
+      polyg <- rbind(polyg, matrix(nrow=n, ncol=4))
     }
-    polyg[row:(row+nrow(df)-1),] <- df[,c(1, 2, 6, 8)]
-    row <- row + nrow(df)
+    last <- row + d - 1
+    polyg[row:last,] <- cbind(fort[,1], fort[,2], group, summ)
+    row <- last + 1
   }
+  polyg <- polyg[!is.na(polyg[,1]),]
   
-  polyg <- polyg[!is.na(polyg$long),]
-  
+  polyg <- as.data.frame(polyg)
+  names(polyg) <- c("long", "lat", "group", "summary")
   polyg$bin <- .bincode(polyg$summary, breaks=breaks)
   
   p <- ggplot() +
