@@ -126,6 +126,25 @@ map_summaries(data, "shannon")
 
 ![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/map5.png)
 
+```R
+data <- get_hexsummaries(typeName = "hexgrid5")
+data <- data[data$centre_latitude > -10,]
+
+jet.colors <- colorRampPalette(
+  c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", 
+  "yellow", "#FF7F00", "red", "#7F0000"))
+breaks <- c(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50)
+colors <- jet.colors(length(breaks) - 1)
+labels <- c("1-5", "5-10", "10-15", "15-20", "20-25", 
+  "25-30", "30-35", "35-40", "40-45", "45-50")
+
+map_summaries(data, "es", breaks=breaks, colors=colors, labels=labels) + 
+  coord_map("ortho", orientation=c(90, 0, 0)) +
+  theme(legend.position="right")
+```
+
+![map](https://raw.githubusercontent.com/pieterprovoost/robis/master/ortho.png)
+
 <a name="export"></a>
 ### Export
 #### Export to GeoJSON using the rwkt package
