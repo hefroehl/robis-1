@@ -8,7 +8,7 @@
 #' @param colors colors vector
 #' @param labels labels vector
 map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, labels=NULL) {
-
+  
   names <- c("simpson", "shannon", "s", "es")
   
   if (! summary %in% names) {
@@ -35,16 +35,24 @@ map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, lab
   
   world <- map_data(map="world")
   
-  polyg <- NULL
+  n <- 20000
+  polyg <- data.frame(long=rep(NA, n), lat=rep(NA, n), order=rep(NA, n), hole=rep(NA, n), piece=rep(NA, n), group=rep(NA, n), id=rep(NA, n), summary=rep(NA, n), bin=rep(NA, n)) 
+  row <- 1
   for (i in 1:nrow(data)) {
     wkt <- readWKT(data$geom[i])
     df <- fortify(wkt)
     df$group <- i
-    df[summary] <- data[summary][i,1]
-    polyg <- rbind(polyg, df)
+    df$summary <- data[summary][i,1]
+    if (nrow(polyg) < (row + nrow(df))) {
+      polyg <- rbind(polyg, data.frame(long=rep(NA, n), lat=rep(NA, n), order=rep(NA, n), hole=rep(NA, n), piece=rep(NA, n), group=rep(NA, n), id=rep(NA, n), summary=rep(NA, n), bin=rep(NA, n)) )
+    }
+    polyg[row:(row+nrow(df)-1),] <- df
+    row <- row + nrow(df)
   }
   
-  polyg$bin <- .bincode(polyg[summary][,1], breaks=breaks)
+  polyg <- polyg[!is.na(polyg$long),]
+  
+  polyg$bin <- .bincode(polyg$summary, breaks=breaks)
   
   p <- ggplot() +
     geom_polygon(data=polyg, aes(x=long, y=lat, group=group, fill=as.factor(bin)), alpha=0.9) +
@@ -70,7 +78,7 @@ map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, lab
       plot.background=element_blank()
     ) +
     coord_fixed(ratio=1)
-
+  
   print(p)
   return(p)
   
