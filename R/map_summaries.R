@@ -9,7 +9,7 @@
 #' @param labels labels vector
 map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, labels=NULL) {
   
-  names <- c("simpson", "shannon", "s", "es")
+  names <- c("simpson", "shannon", "es")
   
   if (! summary %in% names) {
     stop(paste0("Summary must be one of ", paste(names, collapse=", ")))
@@ -22,10 +22,6 @@ map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, lab
   } else if (summary == "shannon") {
     if (is.null(breaks)) breaks <- c(0, 1, 2.1, 3.2, 4.3, 5.4, 6.5, 8.3)
     if (is.null(labels)) labels <- c("0.0-1.0", ">1.0-2.1", ">2.1-3.2", ">3.2-4.3", ">4.3-5.4", ">5.4-6.5", ">6.5-8.3")
-    if (is.null(colors)) colors <- c("blue", "purple", "#56B4E9", "green", "yellow", "orange", "red")
-  } else if (summary == "s") {
-    if (is.null(breaks)) breaks <- c(0, 1000, 2000, 4000, 6000, 8000, 10000, 12000)
-    if (is.null(labels)) labels <- c("0-1000", ">1000-2000", ">2000-4000", ">4000-6000", ">6000-8000", ">8000-10000", ">10000-12000")
     if (is.null(colors)) colors <- c("blue", "purple", "#56B4E9", "green", "yellow", "orange", "red")
   } else if (summary == "es") {
     if (is.null(breaks)) breaks <- c(0, 27, 38, 42, 44, 46, 48, 50)
