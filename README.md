@@ -130,15 +130,7 @@ map_summaries(data, "shannon")
 data <- get_hexsummaries(typeName = "hexgrid5")
 data <- data[data$centre_latitude > -10,]
 
-jet.colors <- colorRampPalette(
-  c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", 
-  "yellow", "#FF7F00", "red", "#7F0000"))
-breaks <- c(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50)
-colors <- jet.colors(length(breaks) - 1)
-labels <- c("1-5", "5-10", "10-15", "15-20", "20-25", 
-  "25-30", "30-35", "35-40", "40-45", "45-50")
-
-map_summaries(data, "es", breaks=breaks, colors=colors, labels=labels) + 
+map_summaries(data, "es", style=style_jet(seq(0, 50, by=5))) + 
   coord_map("ortho", orientation=c(90, 0, 0)) +
   theme(legend.position="right")
 ```
