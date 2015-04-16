@@ -4,29 +4,25 @@
 #' 
 #' @param data data frame from \code{\link{get_summaries}} or \code{\link{get_hexsummaries}}
 #' @param summary summary name to be used, either \code{simpson} or \code{shannon}
-#' @param breaks breaks vector
-#' @param colors colors vector
-#' @param labels labels vector
-map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, labels=NULL) {
+#' @param style list with breaks, labels, and colors vectors
+map_summaries <- function(data, summary="shannon", style=NULL) {
   
-  names <- c("simpson", "shannon", "es")
+  names <- c("simpson", "shannon", "es", "s")
   
   if (! summary %in% names) {
     stop(paste0("Summary must be one of ", paste(names, collapse=", ")))
   }
   
-  if (summary == "simpson") {
-    if (is.null(breaks)) breaks <- c(0, 0.11, 0.23, 0.35, 0.48, 0.61, 0.76, 1.00)
-    if (is.null(labels)) labels <- c("0.00-0.11", ">0.11-0.23", ">0.23-0.35", ">0.35-0.48", ">0.48-0.61", ">0.61-0.76", ">0.76-1.00")
-    if (is.null(colors)) colors <- c("blue", "purple", "#56B4E9", "green", "yellow", "orange", "red")
-  } else if (summary == "shannon") {
-    if (is.null(breaks)) breaks <- c(0, 1, 2.1, 3.2, 4.3, 5.4, 6.5, 8.3)
-    if (is.null(labels)) labels <- c("0.0-1.0", ">1.0-2.1", ">2.1-3.2", ">3.2-4.3", ">4.3-5.4", ">5.4-6.5", ">6.5-8.3")
-    if (is.null(colors)) colors <- c("blue", "purple", "#56B4E9", "green", "yellow", "orange", "red")
-  } else if (summary == "es") {
-    if (is.null(breaks)) breaks <- c(0, 27, 38, 42, 44, 46, 48, 50)
-    if (is.null(labels)) labels <- c("0-27", ">27-38", ">38-42", ">42-44", ">44-46", ">46-48", ">48-50")
-    if (is.null(colors)) colors <- c("blue", "purple", "#56B4E9", "green", "yellow", "orange", "red")
+  if (is.null(style)) {
+    if (summary == "simpson") {
+      style <- style_simpson()
+    } else if (summary == "shannon") {
+      style <- style_shannon()
+    } else if (summary == "es") {
+      style <- style_es()
+    } else {
+      style <- style_obis(data[summary])
+    }
   }
   
   world <- map_data(map="world")
@@ -51,13 +47,13 @@ map_summaries <- function(data, summary="shannon", breaks=NULL, colors=NULL, lab
   
   polyg <- as.data.frame(polyg)
   names(polyg) <- c("long", "lat", "group", "summary")
-  polyg$bin <- .bincode(polyg$summary, breaks=breaks)
+  polyg$bin <- .bincode(polyg$summary, breaks=style$breaks)
   
   p <- ggplot() +
     geom_polygon(data=polyg, aes(x=long, y=lat, group=group, fill=as.factor(bin)), alpha=0.9) +
     scale_fill_manual(
-      labels=labels, 
-      values=colors) +
+      labels=style$labels, 
+      values=style$colors) +
     geom_polygon(data = world, aes(long, lat, group=group), fill="gray90", color="gray90", size=0.2) +
     labs(x="", y="") +
     theme(
