@@ -4,19 +4,14 @@
 \alias{map_summaries}
 \title{Summary map}
 \usage{
-map_summaries(data, summary = "shannon", breaks = NULL, colors = NULL,
-  labels = NULL)
+map_summaries(data, summary = "shannon", style = NULL)
 }
 \arguments{
 \item{data}{data frame from \code{\link{get_summaries}} or \code{\link{get_hexsummaries}}}
 
 \item{summary}{summary name to be used, either \code{simpson} or \code{shannon}}
 
-\item{breaks}{breaks vector}
-
-\item{colors}{colors vector}
-
-\item{labels}{labels vector}
+\item{style}{list with breaks, labels, and colors vectors}
 }
 \description{
 Creates a map from summary data
