@@ -5,8 +5,7 @@ R package for retrieving data from the OBIS Web Services
 ## Install
 
 ```R
-library(devtools)
-install_github("pieterprovoost/robis")
+devtools::install_github("pieterprovoost/robis")
 ```
 
 ## Usage
