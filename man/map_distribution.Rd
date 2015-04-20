@@ -4,10 +4,12 @@
 \alias{map_distribution}
 \title{Distribution map}
 \usage{
-map_distribution(data)
+map_distribution(data, style = style_distribution())
 }
 \arguments{
 \item{data}{data frame from \code{\link{get_distribution}}}
+
+\item{style}{list with breaks, labels, and colors vectors}
 }
 \description{
 Creates a map from distribution data
