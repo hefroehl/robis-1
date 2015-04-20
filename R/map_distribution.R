@@ -3,7 +3,8 @@
 #' Creates a map from distribution data
 #' 
 #' @param data data frame from \code{\link{get_distribution}}
-map_distribution <- function(data) {
+#' @param style list with breaks, labels, and colors vectors
+map_distribution <- function(data, style=style_distribution()) {
 
   world <- map_data(map="world")
   
@@ -16,13 +17,13 @@ map_distribution <- function(data) {
     polyg <- rbind(polyg, df)
   }
   
-  polyg$bin <- .bincode(polyg$num_records, breaks=c(0, 5, 10, 50, 100, 1e12))
+  polyg$bin <- .bincode(polyg$num_records, breaks=style$breaks)
   
   p <- ggplot() +
     geom_polygon(data=polyg, aes(x=long, y=lat, group=group, fill=as.factor(bin)), alpha=0.9) +
     scale_fill_manual(
-      labels=c("1-5", "6-10", "11-50", "51-100", ">100"), 
-      values=c("#56B4E9", "green", "yellow", "orange", "red")) +
+      labels=style$labels,
+      values=style$colors) +
     geom_polygon(data = world, aes(long, lat, group=group), fill="gray90", color="gray90", size=0.2) +
     labs(x="", y="") +
     theme(

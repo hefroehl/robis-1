@@ -41,3 +41,10 @@ style_jet <- function(breaks) {
   colors <- jet.colors(length(breaks)-1)
   return(list(breaks=breaks, labels=labels, colors=colors))
 }
+
+style_distribution <- function() {
+  breaks <- c(0, 5, 10, 50, 100, 1e12)
+  labels <- breaklabels(breaks)
+  colors <- c("#56B4E9", "green", "yellow", "orange", "red")
+  return(list(breaks=breaks, labels=labels, colors=colors))
+}
