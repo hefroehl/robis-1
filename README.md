@@ -91,7 +91,7 @@ map_occurrences(data, color="resname")
 #### Map bounding box
 
 ```R
-m <- map_occurrences(d)
+m <- map_occurrences(data)
 m + coord_quickmap(xlim = c(-20, 30), ylim=c(50, 60))
 ```
 
