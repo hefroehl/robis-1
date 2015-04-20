@@ -44,7 +44,6 @@ map_distribution <- function(data, style=style_distribution()) {
     ) +
     coord_fixed(ratio=1)
   
-  print(p)
   return(p)
   
 }

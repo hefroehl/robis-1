@@ -74,7 +74,6 @@ map_summaries <- function(data, summary="shannon", style=NULL) {
     ) +
     coord_fixed(ratio=1)
   
-  print(p)
   return(p)
   
 }
