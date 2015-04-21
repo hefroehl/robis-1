@@ -9,7 +9,7 @@ map_summaries(data, summary = "shannon", style = NULL)
 \arguments{
 \item{data}{data frame from \code{\link{get_summaries}} or \code{\link{get_hexsummaries}}}
 
-\item{summary}{summary name to be used, either \code{simpson} or \code{shannon}}
+\item{summary}{summary name to be used, either \code{simpson}, \code{shannon}, \code{es}, \code{s}, \code{chao2_unbiased_biota}, or \code{completeness_biota}}
 
 \item{style}{list with breaks, labels, and colors vectors}
 }
